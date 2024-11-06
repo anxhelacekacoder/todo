@@ -1,0 +1,68 @@
+<div class="space">
+    <div class="title">CAT SUPPLIES</div>
+   
+    <div class="centre" routerLink="/details">
+        sasas
+       <img  src={{banner}} alt="image">
+    </div>
+   
+   <div class="page">
+        <div class="row">
+        
+            <div >
+                <table>
+                    <tr>
+                      <th>emri</th>
+                      <th>lloji</th>
+                      <th>ngjyra</th>
+                      <th>mosha</th>
+                      <th>viti</th>
+                   </tr>
+                  @for (item of items; track $index)  {
+                   <tr>
+                    <td> 
+                        {{item.emri}}
+                    </td>
+                    <td> 
+                        {{item.lloji}}
+                    </td>
+                    <td> 
+                        {{item.ngjyra}}
+                    </td>
+                    <td> 
+                        {{item.mosha}}
+                    </td>
+                    <td> 
+                        {{item.viti}}
+                    </td>
+                   </tr>
+                }
+                  
+        
+                </table>
+            </div>    
+            <div >
+                
+                    <img class="item" src="https://fr.lassie.co/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fr208a72kad0m%2F5MwtZRwJ8MhL9P2rIIuTV%2F4087d31c86a865a2e020ad148fdf6bd3%2FCopy_of_Untitled_Design.png&w=3840&q=75" alt="image">
+            </div>
+            <div >
+                
+                <img class="item" src="https://fr.lassie.co/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fr208a72kad0m%2F5MwtZRwJ8MhL9P2rIIuTV%2F4087d31c86a865a2e020ad148fdf6bd3%2FCopy_of_Untitled_Design.png&w=3840&q=75" alt="image">
+            </div>
+            <div >
+                
+                <img class="item" src="https://fr.lassie.co/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fr208a72kad0m%2F5MwtZRwJ8MhL9P2rIIuTV%2F4087d31c86a865a2e020ad148fdf6bd3%2FCopy_of_Untitled_Design.png&w=3840&q=75" alt="image">
+            </div>
+            
+
+      
+        </div>
+
+    </div>
+    <div>
+        <button class="item-button" (click)="changes()"> table</button>
+        <!-- //<button class="item-button" (click)="photo()"> </button> -->
+
+    </div>
+
+</div>

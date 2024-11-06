@@ -1,0 +1,48 @@
+<div>
+    
+    <div class="header">title
+       
+            <button (click)="fdft()" > Add new record</button>
+            
+    </div>
+</div>
+<table class="item-table">
+    <tr>
+        <th class="item-th">Emri</th>
+        <th class="item-th">mbiemri</th>
+        <th class="item-th">numri</th>
+        <th class="item-th">adresa</th>
+        <th class="item-th">vendbanimi</th>
+        <td class="item-td" >action
+            </td>
+    </tr>
+    @for (item of items; track $index) {
+    <tr>
+        
+        <td class="item-td">
+            {{item.emri}}
+
+        </td>
+        <td class="item-td">
+            {{item.mbiemri}}
+        </td>
+        <td class="item-td" >
+            {{item.numri}}
+        </td>
+        <td class="item-td">
+            {{item.adresa}}
+        </td>
+        <td class="item-td">
+            {{item.vendbanimi}}
+        </td>
+        <td>
+            <button (click)="deleteItem(item)"> delete</button>
+            
+
+        </td>
+       
+}
+
+  
+</table>
+

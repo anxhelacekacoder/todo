@@ -1,0 +1,110 @@
+
+<div class="centre">
+    <div class="left">
+      <div class="left-row">
+        <div>
+          <img class="left-icons" src="https://cdn-icons-png.flaticon.com/128/25/25694.png" alt="image">
+  
+        </div>
+      <button class="left-buttons">home</button>
+      </div>
+      <div class="left-row">
+        <div>
+          <img class="left-icons" src="https://cdn-icons-png.flaticon.com/128/11753/11753950.png" alt="image">
+  
+        </div>
+      <button class="left-buttons">shorts</button>
+      </div> 
+  
+      <div class="left-row">
+        <div>
+          <img class="left-icons" src="https://cdn-icons-png.flaticon.com/128/4202/4202578.png" alt="image">
+  
+        </div>
+      <button class="left-buttons">playlist</button>
+      </div> 
+  
+      <div class="left-row">
+        <div>
+          <img class="left-icons" src="https://cdn-icons-png.flaticon.com/128/8191/8191668.png" alt="image">
+  
+        </div>
+      <button class="left-buttons">live</button>
+      </div> 
+  
+      <div class="left-row">
+        <div>
+          <img class="left-icons" src="https://cdn-icons-png.flaticon.com/128/2040/2040504.png" alt="image">
+  
+        </div>
+      <button class="left-buttons">settings</button>
+      </div> 
+      <div class="left-row1">
+        <div>
+          <img class="left-icons" src="https://cdn-icons-png.flaticon.com/128/1144/1144760.png" alt="image">
+  
+        </div>
+      <button class="left-buttons">you</button>
+      </div> 
+      <div class="left2">
+        your page
+        
+      </div>
+  
+    </div>
+    <div class="right">
+      <div class="main-title">
+        <span class="inline-flex items-center bg-blue-100	rounded  px-2 py-1 text-xs font-medium text-indigo-600 ring-1 ring-inset ring-indigo-500/10">All</span>
+<span class="inline-flex items-center bg-blue-100 rounded px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-600/10">music</span>
+<span class="inline-flex items-center bg-blue-100 roundedpx-2 py-1 text-xs font-medium text-indigo-800 ring-1 ring-inset ring-indigo-600/20">hip hop</span>
+<span class="inline-flex items-center bg-blue-100 rounded px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-insetring-indigo-600/20">live</span>
+<span class="inline-flex items-center bg-blue-100 rounded px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">games</span>
+<span class="inline-flex items-center bg-blue-100 rounded px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">mixes</span>
+<span class="inline-flex items-center bg-blue-100 rounded px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset rring-indigo-700/10">comedy</span>
+<span class="inline-flex items-center bg-blue-100 rounded px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">programm</span>
+<span class="inline-flex items-center bg-blue-100 rounded px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">game shows</span>
+<span class="inline-flex items-center bg-blue-100 rounded px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">recently uploaded</span>
+<span class="inline-flex items-center bg-blue-100 rounded px-2 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-700/10">new to you</span>    
+</div>
+    <!-- <div>
+  
+      <div class="row" routerLink="/details">
+
+        @for (item of videos; track $index) {
+        <div class="item-image" >
+          <div>
+            <img [src]="item.image" alt="image">
+  
+          </div>
+          <div>
+            {{item.description}}
+          </div>
+        </div>
+       }
+       </div>
+
+       
+      </div> -->
+
+      <div >
+        <div >
+          
+          <div class="grid grid-cols-3 gap-x-4 gap-y-6 " >
+            @for (item of videos; track $index) {
+            <a  routerLink="/details" class="group pl-5 ">
+              <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
+                <img [src]="'https://voyager.postman.com/illustration/rest-client/rest-client-hero-postman.svg'"  class="h-full w-full object-cover object-center group-hover:opacity-75">
+              </div>
+
+              <h3 class="mt-4 text-l  ">{{item.name}}</h3>
+              
+            </a>
+          }
+          </div>
+        </div>
+      </div>
+  </div>
+  
+  
+  </div>
+  

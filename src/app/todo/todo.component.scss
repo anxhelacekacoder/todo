@@ -1,0 +1,48 @@
+.myday{
+    color: black;
+}
+.header{
+    background-color: whitesmoke;
+}
+.tasks{
+    font-size: 24px;
+}
+.item{
+    border-color: black;
+   
+    padding: 10px;
+    width: 100%;
+    height: 52px;
+    // background-color: whitesmoke;
+    border-radius: 5px;
+    border: 1px solid rgb(236, 229, 229);
+    display: flex;
+    align-items: center;
+    
+}
+.desc1{
+    padding: 3px;
+    display: flex;
+   
+}
+
+.strike {
+    text-decoration: line-through;
+}
+.button{
+    justify-content: end;
+    display: flex;
+    margin-left: auto;
+}
+.shadow{
+    background-color: whitesmoke ;
+    
+}
+.complete{
+    padding: 10px;
+    
+}
+.padding{
+    padding-top: 10px;
+}
+

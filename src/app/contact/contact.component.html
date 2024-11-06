@@ -1,0 +1,43 @@
+<div class="main">
+   <div class="main-child" [formGroup]="form">
+      <div style="margin-left: 40px;">
+         <h3> Get in touch </h3>
+      </div>
+      <div class="row-input">
+         <div class="input-cnt">
+            <input class="formcontrol" formControlName="firstname" type="text" placeholder="First Name"> 
+         </div>
+         <div class="input-cnt">
+            <input class="formcontrol"  formControlName = "lastname" type="text" placeholder="Last Name">
+         </div>
+      </div>
+      <div class="row-input">
+         <div class="input-cnt">
+            <input class="formcontrol" formControlName = "email" type="text" placeholder="Email">
+         </div>
+         <div class="input-cnt">
+            <input class="formcontrol" formControlName = "phone" type="text" placeholder="Phone">
+         </div>
+      </div>
+      <div class="row-input">
+         <div class="input-cnt">
+            <input class="formcontrol" formControlName = "address" type="text" placeholder="address">
+         </div>
+      </div>
+      <div class="row-input">
+         <div class="input-cnt">
+            <textarea class="formcontrol" rows="10" type="text" placeholder="message"></textarea>   
+         </div>
+      </div>
+      <div>
+         <button class="button" (click)="submit()">
+            Submit
+         </button>
+      </div>
+      <div>
+         thanks for submitting!
+      </div>
+
+   </div>
+
+</div>

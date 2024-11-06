@@ -1,0 +1,125 @@
+.card{
+    width: 500px;
+    height: 250px;
+    background-color: rgb(238, 238, 190);
+    display: flex;
+    flex: 1;
+}
+.left{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(238, 238, 190);
+    border-left: 20px solid  rgb(195 172 144 / 32%);
+    border-bottom: 20px solid rgb(195 172 144 / 32%);
+    border-top: 20px solid rgb(195 172 144 / 32%);
+}
+.right{
+    width: 250px;
+    height: 250px;
+   border-left: 1px solid white;
+   border-right: 20px solid rgb(195 172 144 / 32%);
+   border-bottom: 20px solid rgb(195 172 144 / 32%);
+   border-top: 20px solid rgb(195 172 144 / 32%);
+}
+.images{
+    display: flex;
+    // background-color: rgb(238, 238, 190);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.icon-a{
+    height: 70px;
+    filter: opacity(25%);
+}
+.icon-c{
+    height: 70px;
+    filter: opacity(25%);
+    margin-left: -40px;
+}
+.empty-row{
+    display: flex;
+    background-color: rgb(238, 238, 190);
+    width: 100%;
+   height: 40px;
+    justify-content: center;
+}
+.name{
+    font-style: italic;
+    color: rgb(149 115 76);
+    font-size: 17px;
+    text-align: center;
+    padding-top: 15px;
+}
+.name1{
+    font-style: italic;
+    color: rgb(149 115 76);
+    font-size: 17px;
+    text-align: center;
+    
+}
+.empty-row-right{
+    display: flex;
+    background-color: rgb(238, 238, 190);
+    width: 100%;
+   height: 57px;
+    justify-content: center;
+   
+}
+.right-info{
+    height: 20px;
+    filter: opacity(50%);
+    padding: 2px;
+    
+
+}
+.phone{
+    display: flex;
+    flex: 1;
+    padding-left: 55px;
+   padding-top: 5px;
+
+}
+.number{
+    font-style: italic;
+    color: rgb(149 115 76);
+    font-size: 14px;
+}
+.web-design{
+    padding-top: 20px;
+    font-size: 20px;
+    color: rgb(149 115 76);
+    
+}
+.underline{
+    text-decoration-line: underline;
+    text-decoration-thickness: from-font;
+}
+.icon-r{
+    height: 70px;
+    filter: opacity(50%);
+    height: 40px;
+    padding-bottom: 5px;
+}
+.logoAC{
+    display: flex;
+    flex: 1;
+}
+.card-cnt {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: 20px;
+}
+.business-card {
+    background-color: rgb(238, 238, 190);
+    width: 500px;
+    padding: 10px;
+    display: flex
+}
+.business-card-left-section {
+    width: 50%;
+    text-align: center;
+
+}
+.business-card-right-section {
+    width: 50%;
+}

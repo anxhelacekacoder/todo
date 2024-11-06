@@ -1,0 +1,65 @@
+.card{
+    display: inline block;
+    width: 500px;
+    height: 250px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.white-section{
+   height: 70%;
+   display: flex;
+   flex: 1;
+   
+}
+.blue-section{
+    height: 30%;
+    border-top: 2px solid black;
+    background-color:#225799;
+}
+.white-section-qrcode{
+    width: 50%;
+    justify-items: center;
+    height: 100%;
+    padding: 23px;
+}
+.white-section-logo{
+    display: inline;
+  width: 50%;
+    border-left:1px solid black ;
+   text-align: center;
+   padding-top: 32px;
+
+}
+.logo-icon-a{
+    height: 70px;
+}
+.logo-icon-c{
+    height: 70px;
+    margin-left: -37px;
+
+}
+.logo-ac{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.white-section-logo-name{
+    color: #225799;
+    font-size: 25px;
+    font-style: italic;
+}
+.blue-section{
+    width: 100%;
+    display: flex;
+    flex: 1;
+}
+.blue-section-name{ 
+    width: 50%;
+    border-right: 1px solid black;
+    text-align: center;
+    color: white;
+    padding-top: 22px;
+
+}
+.blue-section-information{
+    
+}

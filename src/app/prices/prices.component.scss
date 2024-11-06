@@ -1,0 +1,42 @@
+.item-table{
+border:1px solid black;
+border-collapse: collapse;
+text-align: center;
+width: 100%;
+//margin-top: 20px;
+height: 200px;
+}
+
+.item-th{
+    border:1px solid black;
+    border-collapse: collapse;
+    text-align: center;   
+}
+.item-td{
+    border:1px solid black;
+    border-collapse: collapse;
+    text-align: center;   
+}
+.item-title{
+   text-align: center;
+   color: black;
+   display: flex;
+   justify-content: end;
+   background-color: rgb(218, 228, 230);
+   height:40px ;
+
+}
+.item-user{
+width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    background: white;
+    justify-content: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
