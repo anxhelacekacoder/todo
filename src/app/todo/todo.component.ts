@@ -34,13 +34,15 @@ export class TodoComponent implements OnInit {
 list1=[2,3,4,4,4,];
  
 project(a:any , b:any){
-  let result=1;
   if(a==b) 
-    return true 
+    return true
   else {
     return "shprehje e gabuar"
   }
 }
+listOfNumbers = [2, 3, 5, 7, 11];
+string = JSON.stringify({squirrel: false,
+  events: ["weekend"]});
 
   ngOnInit(): void {
 console.log(this.list1);
@@ -48,21 +50,12 @@ console.log(this.list1[4]);
 console.log(this.list1.push(8));
 
 console.log(this.project(2,3))
-
-
-
-
-      let listOfNumbers = [2, 3, 5, 7, 11];
-      console.log(listOfNumbers[2]);
+      console.log(this.listOfNumbers[2]);
         console.log("coconuts".slice(4, 7));
         console.log("coconut".indexOf("u"));
         console.log("LA".repeat(3));
-        let string = JSON.stringify({squirrel: false,
-          events: ["weekend"]});
-          console.log(string);
-        
-          console.log(JSON.parse(string).events);
-  
+          console.log(this.string);
+          console.log(JSON.parse(this.string).events);
           let journal = [];
           let doh = "Doh";
           console.log(typeof doh.toUpperCase);
@@ -71,16 +64,11 @@ console.log(this.project(2,3))
        console.log(deo.pop());
        deo.push(6);
        console.log(deo);
-       
        console.log(deo.length);
-       
-
        let objectA = {a: 1, b: 2};
        console.log(objectA);
        Object.assign(objectA, {b: 3, c: 4});
        console.log(objectA);
-
-
      let objectS={ c:3, d:4};
       let objectT={e:5,d:8,k:0};
       console.log(Object.assign(objectS,objectT,objectA))
@@ -90,11 +78,11 @@ console.log(this.project(2,3))
       console.log(object2);
       console.log(object1==object3)
     const data = localStorage.getItem('data');
+    
     const data1 = localStorage.getItem('data1');
    if(data) {
     this.items = JSON.parse(data)
  }
-
  if(data1) {
   this.completedItems = JSON.parse(data1)
 }
@@ -116,7 +104,6 @@ console.log(this.project(2,3))
       localStorage.setItem('data', JSON.stringify(this.items))
     }
   }
-
   delete(item:any){
     this.items = this.items.filter(i=>i !==item)
     localStorage.setItem('data', JSON.stringify(this.items))
