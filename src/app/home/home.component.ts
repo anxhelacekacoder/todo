@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   banner = "https://image.chewy.com/catalog/cms/images/1513151_2024-08-IMC_FallDogFood-Mainstream-NonPromo-HHCB-LG._SY296__V1724361555_.jpeg";
-
   items = [
     {
       image: "https://image.chewy.com/catalog/cms/images/2023-08-P49-Content-Card-RESIZED-Image1_84-original._SY320__V1712351167_.jpeg",
@@ -33,25 +32,17 @@ export class HomeComponent implements OnInit {
       description: "Got questions? We got you 24/7. Our pet experts are just a call, e-mail or chat anyway."
     },
   ];
- 
   showBanner:boolean = false;
-
   constructor(
     private router: Router
   ){}
-
-
   ngOnInit(): void {
     this.showBanner = true;
   }
-
   showAlert(item: any){
     this.router.navigate(['details'])
-
   }
-
   test(){
     this.router.navigate(['prices'])
-
   }
 }
