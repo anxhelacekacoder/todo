@@ -20,7 +20,6 @@ export class UserlistComponent  {
   });
   users: any[] = [];
   id = 1;
-
   constructor(
     private router: Router
   ){}
@@ -28,12 +27,8 @@ export class UserlistComponent  {
     const localstorageUsers = localStorage.getItem('users')
     if (localstorageUsers){
       this.users=JSON.parse(localstorageUsers)
-
-
-
       if(this.userId) {
          const user =  this.users.find(user=>user.id == this.userId);
-         
          this.inputForm.patchValue(
           {
             firstname:user.firstname,
@@ -47,7 +42,6 @@ export class UserlistComponent  {
 }
   submit(){
     const formvalue:any = this.inputForm.value;
-
     if(!this.userId) {
       formvalue['id'] = this.users.length + 1 //per te rritur nr e id ne cdo row
       this.users.push(formvalue)
@@ -56,7 +50,6 @@ export class UserlistComponent  {
       const index =  this.users.findIndex(item=>item.id == this.userId);
       this.users[index] = formvalue;
     }
-
       localStorage.setItem('users', JSON.stringify(this.users))
       this.router.navigate(['users'])  
   }
