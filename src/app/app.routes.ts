@@ -9,6 +9,9 @@ import { ExperimentComponent } from './experiment/experiment.component';
 import { TodoComponent } from './todo/todo.component';
 import { AnxhiComponent } from './anxhi/anxhi.component';
 import { BcardComponent } from './bcard/bcard.component';
+import { UsersComponent } from './users/users.component';
+import { UserlistComponent } from './userlist/userlist.component';
+
 
 
 
@@ -53,5 +56,17 @@ export const routes: Routes = [
         component: BcardComponent,
         path: 'bcard'
     },
-
+    {
+        component: UsersComponent,
+        path: 'users'
+    },
+    {
+        component: UserlistComponent,
+        path: 'userlist'
+    },
+    {
+        component: UserlistComponent,
+        path: 'userlist/:userId'
+    },
+   
 ];
